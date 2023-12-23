@@ -1,0 +1,6 @@
+{
+    "layout": "_base",
+    "permalink": "/{{path | slug}}/"
+
+
+}

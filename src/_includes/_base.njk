@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {# default added tag for search engine to crawl all links for content on the page #}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  {# optional tags  #}
+  {%if title %}
+  <title>{{title}}</title>
+  {%endif%}
+  {%if des %}
+  <meta name="description" content="{{des}}"/>
+  {%endif%}
+  {%if keywords %}
+  <meta name="keywords" content="{{keywords}}">
+  {%endif%}
+  {# this is to customize the appearence of page in social media platforms  #}
+  {%if opengraph %}
+  <meta property="og:title" content="{{opengraph.title}}">
+  <meta property="og:description" content="{{opengraph.des}}">
+  <meta property="og:image" content="{{opengraph.image}}">
+  <meta property="og:url" content="{{opengraph.url}}">
+  {%endif%}
+  {# only style sheet to entire website  #}
+  <link rel="stylesheet" href="/css/styles.css">
+  {# adding all general scripts from site.json data file  #}
+  {%for script in site.scripts%}
+        <script src="/js/{{script.path}}"
+          {%if script.attr%}
+            {{script.attr}}
+          {%endif%}
+        ></script>
+  {%endfor%}
+    {# adding custom page scripts if they are specified #}
+  {%if customScripts%}
+    {%for script in customScripts%}
+        <script src="/js/{{script.path}}" 
+          {%if script.attr%}
+            {{script.attr}}
+          {%endif%}
+        ></script>
+    {%endfor%}
+  {%endif%}
+</head>
+<body>
+  {%include "partials/nav.njk"%}
+  <main id="main-container" class="mb-4 mx-05 relative" >
+    {%include "partials/notification.njk"%}
+    {{content | safe}}
+  </main>
+</body>
+</html>

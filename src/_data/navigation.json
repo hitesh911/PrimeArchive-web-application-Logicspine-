@@ -1,0 +1,16 @@
+{
+    "navs":[
+        {
+            "path":"/",
+            "name":"Home"
+        },
+        {
+            "path":"/about/",
+            "name":"About"
+        },
+        {
+            "path":"/rooms/",
+            "name":"Rooms"
+        }
+    ]
+}

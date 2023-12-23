@@ -1,0 +1,11 @@
+
+
+{
+
+    "scripts":[
+            {
+                "path":"common.js",
+                "attr": "defer type = module"
+            }
+    ]
+}

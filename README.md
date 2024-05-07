@@ -1,6 +1,16 @@
 # PrimeArchive: Chat Room Media Player
 
 Welcome to PrimeArchive, an innovative web application that combines the functionality of a chat room with media playback capabilities. PrimeArchive allows users to create and join chat rooms where they can watch or listen to media together while engaging in real-time chat. This project aims to provide a seamless and interactive experience for users to enjoy media content in a social setting.
+##ScreenShots:
+1. ![Screenshot 1](1.png)
+---
+2. ![Screenshot 2](2.png)
+---
+3. ![Screenshot 3](3.png)
+---
+4. ![Screenshot 4](4.png)
+---
+5. ![Screenshot 5](5.png)
 
 ## Overview
 

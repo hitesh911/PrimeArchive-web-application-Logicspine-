@@ -11,8 +11,7 @@ Welcome to PrimeArchive, an innovative web application that combines the functio
 4. ![Screenshot 4](4.png)
 ---
 5. ![Screenshot 5](5.png)
----
-6. ![Screenshot 6](6.png)
+
 
 ## Overview
 
